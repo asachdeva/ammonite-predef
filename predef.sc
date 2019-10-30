@@ -18,7 +18,8 @@ interp.load.ivy(
   import $ivy.`dev.zio::zio:1.0.0-RC16`    
   import $ivy.`org.typelevel::cats-effect:2.0.0`    
   import $ivy.`com.github.chocpanda::scalacheck-magnolia:0.3.1`    
-  import $ivy.`io.chrisdavenport::cats-scalacheck:0.2.0`    
+  import $ivy.`io.chrisdavenport::cats-scalacheck:0.2.0`
+  import $ivy.`com.github.pureconfig::pureconfig:0.12.1`
   import scala.concurrent.ExecutionContext.Implicits.global    
   import scala.concurrent.duration._   
   import scala.concurrent.{ Future, Await }    
