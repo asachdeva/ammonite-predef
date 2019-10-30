@@ -4,7 +4,7 @@ interp.load.ivy(
     ammonite.Constants.version    
   )    
   @    
->>val shellSession = ammonite.shell.ShellSession()    
+  val shellSession = ammonite.shell.ShellSession()    
   import shellSession._    
   import ammonite.ops._    
   import ammonite.shell._    
