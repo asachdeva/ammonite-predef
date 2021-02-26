@@ -16,11 +16,11 @@ interp.load.ivy(
       repl.load.apply(s"""
         import $$ivy.`co.fs2::fs2-io:$version`, fs2._, fs2.concurrent._, cats.    _, cats.implicits._, cats.effect._, cats.effect.implicits._, scala.concurrent.  duration._
   
-        import $$ivy.`org.scalatest::scalatest:3.0.8`,org.scalatest._
-        import $$ivy.`org.scalacheck::scalacheck:1.14.1`
-        import $$ivy.`dev.zio::zio:1.0.0-RC16`
-        import $$ivy.`com.github.pureconfig::pureconfig:0.12.1`
-        import $$ivy.`io.chrisdavenport::cats-scalacheck:0.2.0`   
+        import $$ivy.`org.scalatest::scalatest:3.2.5`,org.scalatest._
+        import $$ivy.`org.scalacheck::scalacheck:1.15.2`
+        import $$ivy.`dev.zio::zio:1.0.4-2`
+        import $$ivy.`com.github.pureconfig::pureconfig:0.14.0`
+        import $$ivy.`io.chrisdavenport::cats-scalacheck:0.3.0`   
   
         implicit val ioContextShift: ContextShift[IO] = IO.contextShift(scala.    concurrent.ExecutionContext.Implicits.global)
         implicit val ioTimer: Timer[IO] = IO.timer(scala.concurrent.              ExecutionContext.Implicits.global)
@@ -30,5 +30,5 @@ interp.load.ivy(
       """)
     }
   
-    def fs2 = fs2Version("2.0.1")
+    def fs2 = fs2Version("2.5.3")
 }
