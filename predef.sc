@@ -5,11 +5,6 @@ interp.load.ivy(
     )   
      
      
-  if (!repl.compiler.settings.isScala213) {   
-    repl.load.apply("interp.configureCompiler(_.settings.YpartialUnification.     value = true)")   
-    repl.load.apply("interp.configureCompiler(_.settings.YpartialUnification.     value = true)")   
-  }   
-     
   interp.configureCompiler(_.settings.Ydelambdafy.tryToSetColon(List("inline")))  
   object load {
     def fs2Version(version: String) = {
